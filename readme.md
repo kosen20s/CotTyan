@@ -1,7 +1,14 @@
-shellgei_discord
+CotTyan Mark II
 ====
 
-あのシェル芸botをDiscordでも．
+いうことを聞かないCotTyanの二代目
+
+主な機能は権限付与
+ほかにもいろんなコマンド実装予定
+使用言語はPythonとRuby(頭おかしい
+コマンドとして実行できて標準出力があればどんな言語でも実装可能なやつ
+実は裏でシェル芸ボットがうごいていてちょっといじれば普通に使える（めんどくさくて設定してないだけ
+以下シェル芸Discordボットの
 
 ## Description
 Twitterで有名な[theoremoon](https://github.com/theoremoon)さんの[シェル芸bot](https://github.com/theoremoon/ShellgeiBot)をDiscord上で実現するbotです．
