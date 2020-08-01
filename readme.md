@@ -1,6 +1,7 @@
 CotTyan Mark II
 ====
 
+![](https://www.repo.approvers.dev/g2058.png)
 いうことを聞かないCotTyanの二代目  
 
 主な機能は権限付与  
