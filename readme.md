@@ -11,6 +11,8 @@ CotTyan Mark II
 実は裏でシェル芸ボットがうごいていてちょっといじれば普通に使える（めんどくさくて設定してないだけ  
 以下シェル芸Discordボットの仕様  
 
+詳細な仕様は`*cot.help!`でどうぞ
+
 ## Description
 Twitterで有名な[theoremoon](https://github.com/theoremoon)さんの[シェル芸bot](https://github.com/theoremoon/ShellgeiBot)をDiscord上で実現するbotです．
 
