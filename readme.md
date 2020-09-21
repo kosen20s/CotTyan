@@ -1,43 +1,14 @@
-CotTyan Mark II
-====
+# CotTyan Mark II
 
-![](https://www.repo.approvers.dev/g2058.png)
-いうことを聞かないCotTyanの二代目  
+kosen20s 鯖で稼働しているボットです.  
+メンテナーは Laminne33569 です
 
-主な機能は権限付与  
-ほかにもいろんなコマンド実装予定  
-使用言語はPythonとRuby(頭おかしい  
-コマンドとして実行できて標準出力があればどんな言語でも実装可能なやつ  
-実は裏でシェル芸ボットがうごいていてちょっといじれば普通に使える（めんどくさくて設定してないだけ  
-以下シェル芸Discordボットの仕様  
+## Commands
 
-詳細な仕様は`*cot.help!`でどうぞ
+`*cot.help!` ヘルプを表示します.  
+`*cot.about!` ボットの詳細を表示します.  
+`*cot.daemon.time!` 現在時刻を表示します. 実際の時刻と数秒のずれが発生します.  
+`*gpg` GitHub に登録されているユーザーの署名用の GPG 公開鍵を取得します.  
+※GPG 公開鍵をインポートする際はインポートする鍵を所有する人の鍵であることを確認してください
 
-## Description
-Twitterで有名な[theoremoon](https://github.com/theoremoon)さんの[シェル芸bot](https://github.com/theoremoon/ShellgeiBot)をDiscord上で実現するbotです．
-
-......といっても自力でDockerコンテナを動かしているわけではなく[jiro4989](https://github.com/jiro4989)さんの[websh](https://github.com/jiro4989/websh)のAPIを叩くだけ．
-
-
-## Usage
-- このbotへのメンションに反応してシェルコマンドを実行します．またその際このbotへのメンションはコードから削除されます．
-- メンションなどのMessageFormatの文字数によるズレをなるべく吸収し，表示に近い字幅でシェルを実行します．
-- コードブロック (\`\`\` ~ \`\`\`) が存在する場合，１つ目のコードブロックの中身のみをコードとして認識します．
-- 30秒以上の処理はタイムアウトします．
-- その他の仕様は本家のリポジトリか[こちら](https://furutsuki.hatenablog.com/entry/2018/07/13/221806)を御覧ください．
-
-
-
-## Link
-- [シェル芸bot (theoremoon)](https://github.com/theoremoon/ShellgeiBot): 本家大本
-- [websh (jiro4989)](https://github.com/jiro4989/websh): API利用先
-- [今の所判明しているシェル芸botの仕様](https://furutsuki.hatenablog.com/entry/2018/07/13/221806): Twitterのシェル芸botの仕様
-
-
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
-## Author
-
-[kairi003](https://github.com/kairi003)
+**_9/21 追記:シェル芸ボットは現在停止中です_**
