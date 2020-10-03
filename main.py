@@ -25,6 +25,10 @@ async def on_member_join(member):
     await channel.send(m)
     
 @client.event
+async def on_ready():
+    print("Bot is ready")
+
+@client.event
 async def on_message(message):
     if message.author.bot:
         return
