@@ -10,7 +10,8 @@ server_id = int(server_id)
 entry_id = int(entry_id)
 hello_id = int(hello_id)
 client = discord.Client()
-
+print("CotTyan Mark II V 2.5.0")
+print("Copyright (c) 2020 T, Laminne Yamamoto")
 async def send(channel,*args, **kwargs): return await channel.send(*args, **kwargs)
 
 @client.event
