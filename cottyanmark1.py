@@ -30,22 +30,22 @@ async def on_message(message):
         embed = embed.set_thumbnail(url="https://www.repo.approvers.dev/g2058.png")
         embed = embed.set_footer(text=about)
         await message.channel.send(embed=embed)
-    if message.content == '*cot.daemon.time!':
-        ruby = subprocess.check_output(['/root/.rbenv/shims/ruby', '/root/cottyan-mark2/main.rb'])
-        m = ruby.decode()
-        ruby = m.replace('"','')
-        await message.channel.send(ruby.replace('"',''))
-    if message.author.id == 487393376078004225:
-        if message.content == "*cot.develop!":
-            text = random.choice('ふぇぇ、恥ずかしいよぅ(*ﾉωﾉ)', 'ちゃんと動作してる、よね？', 'おしごとおしごと！', 'ねぇねぇ、きいてきいて？', 'あのねあのね？')
-            embed = discord.Embed(title="ボットが止まります",description="ボットが再起動、またはメンテナンス等に入るためオフラインになります", color=0x00ccff)
-            embed = embed.set_author(name="CotTyanからのお知らせ",icon_url="https://www.repo.approvers.dev/g2058.png")
-            embed = embed.set_thumbnail(url="https://www.repo.approvers.dev/g2058.png")
-            embed = embed.set_footer(text=text)
-            await message.channnel.send(embed=embed)
-    else:
-        print(message.author.id)
-        print("fail")
+    # if message.content == '*cot.daemon.time!':
+    #     ruby = subprocess.check_output(['/root/.rbenv/shims/ruby', '/root/cottyan-mark2/main.rb'])
+    #     m = ruby.decode()
+    #     ruby = m.replace('"','')
+    #     await message.channel.send(ruby.replace('"',''))
+    # if message.author.id == 487393376078004225:
+    #     if message.content == "*cot.develop!":
+    #         text = random.choice('ふぇぇ、恥ずかしいよぅ(*ﾉωﾉ)', 'ちゃんと動作してる、よね？', 'おしごとおしごと！', 'ねぇねぇ、きいてきいて？', 'あのねあのね？')
+    #         embed = discord.Embed(title="ボットが止まります",description="ボットが再起動、またはメンテナンス等に入るためオフラインになります", color=0x00ccff)
+    #         embed = embed.set_author(name="CotTyanからのお知らせ",icon_url="https://www.repo.approvers.dev/g2058.png")
+    #         embed = embed.set_thumbnail(url="https://www.repo.approvers.dev/g2058.png")
+    #         embed = embed.set_footer(text=text)
+    #         await message.channnel.send(embed=embed)
+    # else:
+    #     print(message.author.id)
+    #     print("fail")
 
 if __name__ == "__main__":
     client.run(os.environ['MARK1_TOKEN'])

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import asyncio
 import discord
-import subprocess
 import os
 entry_id = 736628061289578496
 server_id = 736622331178254426
