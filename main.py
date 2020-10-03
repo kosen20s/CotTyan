@@ -46,5 +46,4 @@ async def on_message(message):
             channel = client.get_channel(737576896476348447)
             return await channel.send(message_to)
 
-if __name__ == "__main__":
-    client.run(os.environ['MARK1_TOKEN'])
+client.run(os.environ['MARK1_TOKEN'])
