@@ -16,6 +16,7 @@ async def send(channel,*args, **kwargs): return await channel.send(*args, **kwar
 
 @client.event
 async def on_member_join(member):
+    print("[debug] member joined")
     lrn = []
     for role in member.roles:
         lrn.append(role.name)
@@ -24,6 +25,7 @@ async def on_member_join(member):
     m = "Hi!<@"+str(member.id)+">,\nPlease read <#736628061289578496> and type [ok]. \nIf you are going to to be able to do it, please introduse yourself in <#736627134604378143>.\n"
     channel = client.get_channel(737576896476348447)
     await channel.send(m)
+    print("[debug] message sended")
     
 @client.event
 async def on_ready():
