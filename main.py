@@ -2,6 +2,7 @@
 import asyncio
 import discord
 import os
+import logging
 entry_id = 736628061289578496
 server_id = 736622331178254426
 hello_id = 737068025253200069
@@ -10,13 +11,13 @@ server_id = int(server_id)
 entry_id = int(entry_id)
 hello_id = int(hello_id)
 client = discord.Client()
-print("CotTyan Mark II V 2.5.0")
-print("Copyright (c) 2020 T, Laminne Yamamoto")
+logging.debug("CotTyan Mark II V 2.5.0")
+logging.debug("Copyright (c) 2020 T, Laminne Yamamoto")
 async def send(channel,*args, **kwargs): return await channel.send(*args, **kwargs)
 
 @client.event
 async def on_member_join(member):
-    print("[debug] member joined")
+    logging.debug("[debug] member joined")
     lrn = []
     for role in member.roles:
         lrn.append(role.name)
@@ -25,16 +26,19 @@ async def on_member_join(member):
     m = "Hi!<@"+str(member.id)+">,\nPlease read <#736628061289578496> and type [ok]. \nIf you are going to to be able to do it, please introduse yourself in <#736627134604378143>.\n"
     channel = client.get_channel(737576896476348447)
     await channel.send(m)
-    print("[debug] message sended")
+    logging.debug("[debug] message sent")
     
 @client.event
 async def on_ready():
-    print("Bot is ready")
+    logging.debug("Bot is ready")
 
 @client.event
 async def on_message(message):
     if message.author.bot:
         return
+    if message.content == "ping":
+        return await message.channel.send("pong")
+        logging.debug("message sent")
     if message.guild.id == server_id:
         if message.content == "ok":
             lrn = []
